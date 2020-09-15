@@ -1,0 +1,63 @@
+#Practica No 2 LAB 111
+#Nombre: Claudio Andres Sanjines Cuellar
+#Paralelo: "F"
+#Fecha: 14/Sep/2020
+
+#Ejercicio 1
+
+x = int(input("Ingrese los segundos: "))
+
+x = x
+minutosx = x // 60
+horasx = x // (60 * 60)
+
+z = int(input("Ingrese el tiempo de la tarea en segundos: "))
+
+z = z
+minutosz = z // 60
+horasz = z // (60 * 60)
+
+print("Segundos: {}, Minutos: {}, Horas: {}".format(z, minutosz, horasz))
+
+if x >= z:
+    print("Se puede realizar la tarea. ")
+elif minutosx > minutosz:
+    print("Se puede realizar la tarea. ")
+elif horasx > horasz:
+    print("Se puede realizar la tarea. ")
+elif z > x:
+    print("No se puede realizar la tarea. ")
+
+#Ejercicio 2
+
+a = int(input("Ingrese el valor de a: "))
+b = int(input("Ingrese el valor de b: "))
+c = int(input("Ingrese el valor de c: "))
+
+d = (b**2)-(4*a*c)
+
+if d > 0:
+    print("Las raices seran reales y diferentes" )
+elif d == 0:
+    print("Las raices seran reales e iguales" )
+elif d < 0:
+    print("Las raices seran complejas.")
+
+print("Resultado:",d)
+
+#Ejercicio 3
+
+a = int(input("Ingrese un valor en segundos: "))
+b = int(input("Ingrese un valor en minutos: "))
+c = int(input("Ingrese un valor en horas: "))
+
+h = (c*3600)
+m = (b*60)
+
+d = a + 1
+e = m + 1
+f = h + 1
+
+print(a,"seg"," mas 1 seg: ",d,"seg")
+print(b,"min"," mas 1 seg: ",e,"seg")
+print(c,"horas"," mas 1 seg: ",f,"seg")
